@@ -1,12 +1,12 @@
 import React from 'react'
-
+import RouterPage from './Pages/RouterPage'
 
 function App() {
   return (
-    <div className="App">
-    <h1>Welcome to Foodie APP</h1>
+    <div>
+<RouterPage/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
