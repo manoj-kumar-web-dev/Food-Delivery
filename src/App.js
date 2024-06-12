@@ -1,13 +1,15 @@
-import React from 'react'
-import RouterPage from './Pages/RouterPage'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import Login from "./Pages/Login";
+import RouterPage from "./Pages/RouterPage";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <div>
-<RouterPage/>
+      <Login />
+      <RouterPage />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
