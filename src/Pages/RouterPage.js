@@ -6,7 +6,7 @@ import LandingPage from './LandingPage';
 function RouterPage() {
   return (
     <div>
-        <Header/>
+       
  <BrowserRouter>
    <Routes>
     <Route path='/home' element={<Home/>}/>
