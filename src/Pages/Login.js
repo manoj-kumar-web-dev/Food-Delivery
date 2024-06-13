@@ -71,9 +71,36 @@ const Login = () => {
               <span className="error">{formErrors.password}</span>
             )}
           </div>
-          <button type="submit" className="btn btn-primary">
+          <button
+            type="submit"
+            className="btn btn-primary"
+            style={{ marginTop: "15px" }}
+          >
             Submit
           </button>
+          <div className="form-group form-check" style={{ marginTop: "10px" }}>
+            <input
+              type="checkbox"
+              className=""
+              id="exampleCheck1"
+              style={{ marginLeft: "50px" }}
+            />
+            <label className="" htmlFor="exampleCheck1">
+              Remember Me
+            </label>
+            <a
+              href=""
+              className="forgotpassword"
+              style={{ marginLeft: "auto", marginBottom: "50px" }}
+            ></a>
+          </div>
+          <div className="email_name" style={{ marginTop: "10px" }}>
+            <Link to="/signup" style={{ color: "blue" }}>
+              <> </>
+              <Link to="/signup">Forgot Password?</Link>
+            </Link>
+          </div>
+
           <div className="login-link">
             New User? <Link to="/signup">Signup</Link>
           </div>
