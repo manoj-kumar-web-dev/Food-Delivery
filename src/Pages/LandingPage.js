@@ -2,19 +2,19 @@ import React from 'react'
 import Header from '../Components/layout/Header'
 import img  from '../Assets/image.png'
 import '../Styles/global.css'
-import { Button } from 'react-bootstrap'
+import { Button } from 'antd'
+
 
 function LandingPage() {
   return (
-    <div style={{backgroundColor:"#D6EAF5",height:"500px"}}>
+    <div className='landing_hero'>
       <Header/>
       <div style={{display:"flex",}}>
 
       <div>
       <h3 className='biryani_text' >Biryani</h3>
       <h3 className='biryani_text1'> We All Love</h3>
-
-      <Button className='homebutton'>View More</Button>
+      <button className='homebutton'>View More</button>
       </div>
 
       <div className='hero' >
