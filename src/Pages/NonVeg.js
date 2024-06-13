@@ -1,13 +1,13 @@
 import React from 'react'
 import Header from '../Components/layout/Header'
 
-function Home() {
+function NonVeg() {
   return (
     <div>
-      <Header/>
-      <h1>Home Page</h1>
-    </div>
+       <Header/>
+       NonVeg
+       </div>
   )
 }
 
-export default Home
+export default NonVeg
