@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 import "../Styles/signup.css";
-import { Link } from "react-router-dom";
 import login from "../Assets/login.jpg";
-import React, { useState } from "react";
-import "../Styles/signup.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
-import login from "../Assets/login.jpg";
 
 function SignupPage() {
   const [formValues, setFormValues] = useState({
