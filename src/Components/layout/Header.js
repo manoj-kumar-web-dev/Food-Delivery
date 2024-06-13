@@ -25,10 +25,10 @@ function Header() {
         <a href="/veg" className=" nav-link-custom">Veg</a>
       </li>
       <li className="nav-item">
-        <a href="/non-veg" className=" nav-link-custom">Non-Veg</a>
+        <a href="/nonveg" className=" nav-link-custom">Non-Veg</a>
       </li>
       <li className="nav-item">
-        <a href="/beverages" className=" nav-link-custom">Beverages</a>
+        <a href="/beve" className=" nav-link-custom">Beverages</a>
       </li>
       <li className="nav-item">
         <a href="/offers" className=" nav-link-custom">Offers</a>
