@@ -4,6 +4,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px; /* Added padding to avoid content touching edges */
+  box-sizing: border-box;
 }
 
 .video-background {
@@ -24,10 +26,11 @@
 
 .form-container {
   display: flex;
-  width: 350px;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -35,7 +38,6 @@
 
 .signup-form {
   width: 100%;
-  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,6 +46,7 @@
 .signup-heading {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 24px;
 }
 
 .form-group {
@@ -52,21 +55,24 @@
 }
 
 .form-control {
-  width: calc(100% - 20px);
+  width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .signup-btn {
-  width: 150px;
+  width: 100%;
+  max-width: 150px;
   padding: 10px;
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 100px;
+  border-radius: 50px;
   cursor: pointer;
   align-self: center;
+  margin-bottom: 10px; /* Added margin-bottom to adjust spacing */
 }
 
 .signup-btn:hover {
@@ -95,4 +101,40 @@
 
 .form-group.confirm-password {
   margin-bottom: 10px;
+}
+
+@media (min-width: 576px) {
+  .form-container {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .signup-heading {
+    font-size: 28px;
+  }
+
+  .form-container {
+    padding: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .signup-heading {
+    font-size: 32px;
+  }
+
+  .form-container {
+    padding: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .signup-heading {
+    font-size: 36px;
+  }
+
+  .form-container {
+    padding: 70px;
+  }
 }
