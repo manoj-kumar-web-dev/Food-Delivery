@@ -9,7 +9,7 @@ font-size: 18px;
 
 .landing_hero{
     position: absolute;
-    width: 1362px;
+    width: 100%;
     height: 500px;
     left: 0px;
     top: 0px;
@@ -332,6 +332,18 @@ color: #5F60B3;
 padding-top: 12px;
 }
 
+@media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  }
+  
+  /* Hide menu icon on larger screens */
+  @media (min-width: 769px) {
+    .menu-icon {
+      display: none;
+    }
+  }
 .header{
 position: absolute;
 width: 65px;
