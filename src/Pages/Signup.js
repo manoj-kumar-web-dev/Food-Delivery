@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../Styles/signup.css";
-import signupVideo from '../Assets/signup.mp4'; 
+import signupVideo from "../Assets/signup.mp4";
 
 const Signup = () => {
   const [formValues, setFormValues] = useState({
-    email: '',
-    firstName: '',
-    lastName: '',
-    password: '',
-    confirmPassword: ''
+    email: "",
+    firstName: "",
+    lastName: "",
+    password: "",
+    confirmPassword: "",
   });
 
   const [formErrors, setFormErrors] = useState({});
@@ -22,25 +22,25 @@ const Signup = () => {
   const validate = () => {
     let errors = {};
     if (!formValues.email) {
-      errors.email = 'Email is required';
+      errors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(formValues.email)) {
-      errors.email = 'Email address is invalid';
+      errors.email = "Email address is invalid";
     }
     if (!formValues.firstName) {
-      errors.firstName = 'First name is required';
+      errors.firstName = "First name is required";
     }
     if (!formValues.lastName) {
-      errors.lastName = 'Last name is required';
+      errors.lastName = "Last name is required";
     }
     if (!formValues.password) {
-      errors.password = 'Password is required';
+      errors.password = "Password is required";
     } else if (formValues.password.length < 6) {
-      errors.password = 'Password must be at least 6 characters';
+      errors.password = "Password must be at least 6 characters";
     }
     if (!formValues.confirmPassword) {
-      errors.confirmPassword = 'Confirm password is required';
+      errors.confirmPassword = "Confirm password is required";
     } else if (formValues.confirmPassword !== formValues.password) {
-      errors.confirmPassword = 'Passwords do not match';
+      errors.confirmPassword = "Passwords do not match";
     }
     return errors;
   };
@@ -51,7 +51,10 @@ const Signup = () => {
   };
 
   return (
+    <div>
+      <Header/>
     <div className="signup-page">
+      
       <div className="video-background">
         <video autoPlay loop muted>
           <source src={signupVideo} type="video/mp4" />
@@ -60,7 +63,7 @@ const Signup = () => {
       </div>
       <div className="form-container">
         <form onSubmit={handleSubmit} className="signup-form">
-          <h1 className='signup-heading'>Signup</h1>
+          <h1 className="signup-heading">Signup</h1>
           <div className="form-group">
             <input
               type="email"
@@ -70,7 +73,9 @@ const Signup = () => {
               value={formValues.email}
               onChange={handleChange}
             />
-            {formErrors.email && <span className="error">{formErrors.email}</span>}
+            {formErrors.email && (
+              <span className="error">{formErrors.email}</span>
+            )}
           </div>
           <div className="form-group">
             <input
@@ -81,7 +86,9 @@ const Signup = () => {
               value={formValues.firstName}
               onChange={handleChange}
             />
-            {formErrors.firstName && <span className="error">{formErrors.firstName}</span>}
+            {formErrors.firstName && (
+              <span className="error">{formErrors.firstName}</span>
+            )}
           </div>
 
           <div className="form-group">
@@ -93,7 +100,9 @@ const Signup = () => {
               value={formValues.lastName}
               onChange={handleChange}
             />
-            {formErrors.lastName && <span className="error">{formErrors.lastName}</span>}
+            {formErrors.lastName && (
+              <span className="error">{formErrors.lastName}</span>
+            )}
           </div>
 
           <div className="form-group">
@@ -105,7 +114,9 @@ const Signup = () => {
               value={formValues.password}
               onChange={handleChange}
             />
-            {formErrors.password && <span className="error">{formErrors.password}</span>}
+            {formErrors.password && (
+              <span className="error">{formErrors.password}</span>
+            )}
           </div>
 
           <div className="form-group confirm-password">
@@ -117,18 +128,22 @@ const Signup = () => {
               value={formValues.confirmPassword}
               onChange={handleChange}
             />
-            {formErrors.confirmPassword && <span className="error">{formErrors.confirmPassword}</span>}
+            {formErrors.confirmPassword && (
+              <span className="error">{formErrors.confirmPassword}</span>
+            )}
           </div>
 
-          
-          <button type="submit" className="signup-btn">Submit</button>
+          <button type="submit" className="signup-btn">
+            Submit
+          </button>
           <div className="signup-link">
             Already Registered? <Link to="/signin">Sign In</Link>
           </div>
         </form>
       </div>
     </div>
+    </div>
   );
-}
+};
 
 export default Signup;
