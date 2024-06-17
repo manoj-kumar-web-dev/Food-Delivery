@@ -11,19 +11,19 @@ function LandingPage() {
   const Veg = () => {
     navigation("/veg");
   };
-  const NonVeg =() => {
-    navigation("/nonveg")
-  }
+  const NonVeg = () => {
+    navigation("/nonveg");
+  };
 
-  const beverages = () =>{
-    navigation("/beve")
-  }
-  const Login = () =>{
-    navigation("/signin")
-  }
-  const SignUp = () =>{
-    navigation("/signup")
-  }
+  const beverages = () => {
+    navigation("/beve");
+  };
+  const Login = () => {
+    navigation("/signin");
+  };
+  const SignUp = () => {
+    navigation("/signup");
+  };
   return (
     <div>
       <div className="landing_hero">
@@ -66,8 +66,12 @@ function LandingPage() {
           scrambled it to make a type specimen book. It has survived not only
           five centuries
         </p>
-        <p className="Login_Button" onClick={Login}>Login</p>
-        <p className="SignUp_Button" onClick={SignUp}>SignUp</p>
+        <p className="Login_Button" onClick={Login}>
+          Login
+        </p>
+        <p className="SignUp_Button" onClick={SignUp}>
+          SignUp
+        </p>
       </div>
     </div>
   );

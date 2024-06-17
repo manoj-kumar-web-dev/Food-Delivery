@@ -9,18 +9,16 @@ import Veg from "./Veg";
 import NonVeg from "./NonVeg";
 import Beverages from "./Beverages";
 
-
 function RouterPage() {
   console.log("RouterPage rendered");
   return (
     <Router>
       <Routes>
-      <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/veg" element={<Veg/>} />
+        <Route path="/veg" element={<Veg />} />
         <Route path="/nonveg" element={<NonVeg />} />
-        <Route path="/beve" element={<Beverages/>} />
-
+        <Route path="/beve" element={<Beverages />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/signin" element={<Login />} />
       </Routes>

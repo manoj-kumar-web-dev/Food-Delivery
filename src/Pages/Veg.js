@@ -1,14 +1,13 @@
-import React from 'react'
-import Header from '../Components/layout/Header'
+import React from "react";
+import Header from "../Components/layout/Header";
 
 function Veg() {
   return (
     <div>
-        <Header/>
-        Veg
-        
+      <Header />
+      Veg
     </div>
-  )
+  );
 }
 
-export default Veg
+export default Veg;
