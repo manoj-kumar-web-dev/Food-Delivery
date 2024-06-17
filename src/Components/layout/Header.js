@@ -17,7 +17,7 @@ function Header() {
         <span class="fs-4" style={{fontFamily:"Scheherazade New",fontStyle:"normal",fontWeight:"700",fontSize:"35px",lineHeight:"45px",color:"#000000",marginLeft:"-10px"}}>Food-Frenzy</span>
       </a>
 
-      <ul className="nav nav-pills mt-negative-30">
+      <ul className="nav  mt-negative-30">
       <li className="nav-item">
         <a href="/home" className=" nav-link-custom" aria-current="page">Home</a>
       </li>
@@ -42,7 +42,7 @@ function Header() {
           <img src={personlogo} alt='personlogo' style={{height:"35px",width:"35px",marginTop:"0px" }}/>
             <NavDropdown style={{ marginTop: "0px" }}   >
             
-                <DropdownItem href="/login" className="  nav-link-custom">
+                <DropdownItem href="/signin" className="  nav-link-custom">
                   Login with user credentials
                 </DropdownItem>
              <hr/>

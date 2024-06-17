@@ -3,7 +3,6 @@ import Header from "../Components/layout/Header";
 import img from "../Assets/image.png";
 import "../Styles/global.css";
 import { Navigate, useNavigate } from "react-router-dom";
-import Login from "./Login";
 
 function LandingPage() {
   const navigation = useNavigate();
