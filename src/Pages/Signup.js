@@ -7,7 +7,10 @@ import Header from '../Components/layout/Header';
 const Signup = () => {
   const [formValues, setFormValues] = useState({
     email: '',
+    firstName: '',
+    lastName: '',
     password: '',
+    confirmPassword: ''
   });
 
   const [formErrors, setFormErrors] = useState({});
@@ -61,7 +64,7 @@ const Signup = () => {
       </div>
       <div className="form-container">
         <form onSubmit={handleSubmit} className="signup-form">
-          <h1 className='signupheading'>Signup</h1>
+          <h1 className='signup-heading'>Signup</h1>
           <div className="form-group">
             <input
               type="email"
@@ -122,9 +125,9 @@ const Signup = () => {
           </div>
 
           
-          <button type="submit" className="btn btn-primary">Submit</button>
+          <button type="submit" className="signup-btn">Submit</button>
           <div className="signup-link">
-            Already Registered? <Link to="/signup">Sign In</Link>
+            Already Registered? <Link to="/signin">Sign In</Link>
           </div>
         </form>
       </div>
