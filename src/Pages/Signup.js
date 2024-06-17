@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import "../Styles/signup.css";
 import signupVideo from '../Assets/signup.mp4'; 
+import Header from '../Components/layout/Header';
 
 const Signup = () => {
   const [formValues, setFormValues] = useState({
@@ -48,7 +49,10 @@ const Signup = () => {
   };
 
   return (
+    <div>
+      <Header/>
     <div className="signup-page">
+      
       <div className="video-background">
         <video autoPlay loop muted>
           <source src={signupVideo} type="video/mp4" />
@@ -124,6 +128,7 @@ const Signup = () => {
           </div>
         </form>
       </div>
+    </div>
     </div>
   );
 }
